@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -14,8 +16,9 @@
   position: fixed;
   z-index: 10; }
   .header .header__titulo-principal {
-    font-size: 20px;
-    color: white; }
+    font-size: 30px;
+    color: white;
+    font-family: "Vollkorn", serif; }
   .header .header__boton-menu {
     border: 1px solid white;
     width: 40px;
@@ -26,7 +29,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 1px 1px 8px gray; }
     .header .header__boton-menu .fa-bars {
       position: absolute;
       color: white;
@@ -39,12 +43,24 @@
       transition: 0.6s ease; }
     .header .header__boton-menu .ocultar {
       opacity: 0; }
+    .header .header__boton-menu:active {
+      box-shadow: none;
+      width: 39px;
+      height: 39px; }
+
+body {
+  background-color: black; }
 
 main .menu-lateral {
-  height: 100vh;
-  transition: 0.6s ease; }
+  height: 700px;
+  width: 100%;
+  transition: 0.6s ease;
+  left: 0;
+  position: absolute;
+  top: 70px;
+  z-index: 999; }
   main .menu-lateral .menu-lateral__bloque {
-    height: 100vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,4 +77,18 @@ main .menu-lateral {
           color: #8c2323; }
 
 main .mostrar {
-  transform: translate(-100%, 0%); }
+  left: -100%; }
+
+main .container-seccion1 {
+  border: 1px solid red;
+  position: relative;
+  top: 70px;
+  height: 320px; }
+  main .container-seccion1 .contenedor-imagen1 {
+    border: 1px solid blue;
+    width: 220px;
+    height: 290px;
+    overflow: hidden;
+    opacity: 0.6; }
+    main .container-seccion1 .contenedor-imagen1 img {
+      width: 100%; }

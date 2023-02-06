@@ -7,5 +7,4 @@ botonMenu.addEventListener("click", () => {
     menuLateral.classList.toggle("mostrar")
     barraMenu.classList.toggle("ocultar")
     xMenu.classList.toggle("ocultar")
-    console.log("completado")
 })
